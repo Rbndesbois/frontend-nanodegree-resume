@@ -14,7 +14,7 @@ var bio = {
 "biopic": "images/Head.jpg"
 };
 
-function displayBio() {
+bio.display = function() {
     //if (bio.name.length >0)
     console.log(bio.name);
 
@@ -42,9 +42,9 @@ function displayBio() {
     $("#header").prepend(formattedName);
     //$("#header").prepend(bio.role)
 }
-displayBio();
+bio.display();
 
-function displayBioSkills() {
+BioSkills = function() {
     if (bio.skills.length > 0) {
         //$("#header").append(HTMLskillsStart);
 
@@ -70,7 +70,7 @@ function displayBioSkills() {
         //bio.skills[4]);
     }
 }
-displayBioSkills();
+BioSkills();
 
 
 
@@ -100,7 +100,7 @@ var education = {
 
 //function displayEducation(){
 //education.forEach(function(school) {
-function displayEducation() {
+Education = function() {
     for (var indexCount = 0; indexCount < education.schools.length; indexCount++) {
         $("#education").append(HTMLschoolStart);
         console.log(indexCount);
@@ -122,9 +122,9 @@ function displayEducation() {
         $(".education-entry:last").append(formattedMajor);
     }
 }
-displayEducation();
+Education();
 
-function displayOnlineEdu() {
+OnlineEdu = function() {
     for (var indexCount = 0; indexCount < education.onlineCourses.length; indexCount++) {
         $("#education").append(HTMLschoolStart);
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[indexCount].title);
@@ -139,7 +139,7 @@ function displayOnlineEdu() {
         $(".education-entry:last").append(formattedonlineURL);
     }
 }
-displayOnlineEdu();
+OnlineEdu();
 
 
 //for [school in education.schools] {
@@ -214,7 +214,7 @@ projects.display = function() {
 projects.display();
 
 
-function displayWork() {
+Work = function() {
     for (var indexCount = 0; indexCount < work.jobs.length; indexCount++) {
         $("#workExperience").append(HTMLworkStart);
 
@@ -237,7 +237,7 @@ function displayWork() {
             formattedDescription);
     }
 }
-displayWork();
+Work();
 
 $(document).click(function(loc) {
     var x = loc.pageX;

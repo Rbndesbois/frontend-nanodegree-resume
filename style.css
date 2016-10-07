@@ -64,7 +64,7 @@ h5 {
 
 .date-text {
   font-style: arial;
-  font-size: 14px;
+  font-size: 15px;
   color: #999;
   line-height: 16px;
   float: left;
@@ -72,7 +72,7 @@ h5 {
 
 .location-text {
   font-style: italic;
-  font-size: 14px;
+  font-size: 15px;
   color: #999;
   line-height: 16px;
   float: right;
@@ -80,7 +80,7 @@ h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   line-height: 21px;
 }
